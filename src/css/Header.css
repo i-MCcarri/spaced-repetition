@@ -1,0 +1,66 @@
+.title h1, .title h1 a{
+    font-family: 'Ruthie', cursive;
+    font-size: 100px;
+    text-decoration: none;
+    color: #9AC2C5;
+    letter-spacing: 1px;
+    text-shadow: 0 2px 0 #000;
+    font-weight: 700;
+    text-align: center;
+}
+
+.header-nav {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.header-nav, .header-nav a {
+    color: #FFFFFF;
+    letter-spacing: 1px;
+    text-shadow: 0 2px 0 #000;
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+    margin-top: -100px;
+    margin-left: 30px;
+    margin-right: 70px;
+}
+
+.header-nav a:hover {
+    color: #59626E;
+    letter-spacing: 2px;
+    text-shadow: 0 2px 0 #000;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.user-name, footer {
+    color: #888888;
+    letter-spacing: 1px;
+    text-shadow: 0 2px 0 #000;
+    font-weight: 600;
+    font-size: 21px;
+    text-align: center;
+}
+
+label {
+    color: #000000;
+    opacity: 1;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-size: 21px;
+    text-align: center;
+}
+
+.user-name {
+    margin-top: -210px;
+    margin-bottom: 200px;
+}
+
+div {
+    text-align: center;
+}
