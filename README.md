@@ -9,7 +9,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 Diglot is mobile-first designed application and website for the busy and aspiring linguist. have you wanted to add Chinese to your repitoire? work towards becoming a polyglot, by starting with Diglot.  
 
-```Spaced-Repetition``` is the frontend for ```Diglot```. to see Diglot in action, checkout <a href=''>Diglot</a>.
+```Spaced-Repetition``` is the frontend for ```Diglot```. to see Diglot in action, checkout <a href='https://diglot.vercel.app'>Diglot</a>.
 
 The ```Diglot``` backend can be found at: <a href=''>Spaced-Repetition-Api</a>.
 
