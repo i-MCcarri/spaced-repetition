@@ -1,11 +1,15 @@
-import React, { useEffect, Fragment, useState } from 'react';
+import React, { useEffect, Fragment, useState, useContext } from 'react';
 import ChineseApiService from '../../services/zhongWen-api-service';
 import Result from '../Result/Result';
+import Button from '../Button/Button';
 import '../../css/InterpretationTest.css';
-
+//import UserContext from '../../contexts/UserContext';
 
 function CeShi(props) {
+
     const [word, setWord] = useState({
+        nextCharacter: '我',
+        nextPinyin: 'wǒ',
         nextWord: 'wo',
         totalScore: 0,
         wordCorrectCount: 0,
@@ -38,9 +42,7 @@ function CeShi(props) {
 
         try {
             const newWord = await ChineseApiService.postAnswer(input.trim().toLowerCase())
-            // console.log('answer: ', input.trim().toLowerCase())
             setLastWord({ ...word, input })
-            // console.log('value of word: ', word)
             setWord(newWord)
             setInput('')
             setAnswer(true)
@@ -52,10 +54,10 @@ function CeShi(props) {
 
     const resultData = {
         input: lastWord.input,
-        character: lastWord.character,
-        pinyin: lastWord.pinyin,
+        character: lastWord.nextCharacter,
+        pinyin: lastWord.nextPinyin,
         original: lastWord.nextWord,
-        translation: answer,
+        translation: word.answer,
         totalScore: word.totalScore,
         isCorrect: word.isCorrect
     }
@@ -67,7 +69,7 @@ function CeShi(props) {
                     <div className='header-zifu'>
                         <div className='header-zifu-title'><br/>
                             <h2>Translate the word:</h2>
-                            <span className='zifu'>{word.nextWord}</span>
+                            <span className='zifu'>{word.nextCharacter}{" - "}{word.nextPinyin}</span>
                         </div>
                         <div className='header-zifu-score'>
                             <p>Your total score is: {word.totalScore}</p>
@@ -75,20 +77,24 @@ function CeShi(props) {
                             <p>You have answered this word incorrectly {word.wordIncorrectCount} times.</p>
                         </div>
                     </div>
+                    <div>
                     <form className='zifu-wrapper' onSubmit={(e) => handleSubmit(e)}>
                         <fieldset>
                             <legend></legend>
-                            <label htmlFor='zifu-input'>What's the English translation for this word?</label>
+                            <label htmlFor='learn-guess-input'>What's the translation for this word?</label><br/><br/>
                             <input autoComplete='off'
-                                id='zifu-input'
+                                id='learn-guess-input'
                                 type='text'
                                 value={input}
                                 onChange={(e) => setInput(e.target.value)} 
                                 required 
                             />
                         </fieldset>
-                        <button type='submit'>Submit your response</button>
+                        <div className='btn-wrapper'>
+                            <Button type='submit'>Submit your answer</Button>
+                        </div>
                     </form>
+                    </div>
                 </Fragment>
                 : <Result {...resultData} setAnswer={(z) => setAnswer(z)} />
             }

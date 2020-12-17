@@ -1,4 +1,6 @@
 {
+  "nextCharacter": "test-next-character-from-incorrect-guess",
+  "nextPinyin": "test-next-pinyin-from-incorrect-guess",
   "nextWord": "test-next-word-from-incorrect-guess",
   "wordCorrectCount": 888,
   "wordIncorrectCount": 111,

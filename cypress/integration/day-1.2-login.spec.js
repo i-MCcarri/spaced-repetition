@@ -195,11 +195,13 @@ describe(`User story: Login`, function() {
       cy.get('header').within($header => {
         cy.contains('Test name of user').should('exist')
         cy.get('nav a')
+          .first()
           .should('have.length', 1)
-          .and('have.text', 'Logout')
-          .and('have.attr', 'href', '/login')
+          .and('have.text', 'Home')
+          .and('have.attr', 'href', '/')
 
         cy.get('nav a')
+          .last()
           .click()
           .url()
           .should('eq', `${Cypress.config().baseUrl}/login`)

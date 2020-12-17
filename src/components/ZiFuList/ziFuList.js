@@ -2,6 +2,7 @@ import React, { Fragment, useContext, useEffect } from 'react'
 import { Link } from 'react-router-dom';
 import UserContext from '../../contexts/UserContext';
 import ChineseApiService from '../../services/zhongWen-api-service';
+import Button from '../Button/Button';
 
 function ZiFuList() {
     const user = useContext(UserContext)
@@ -18,7 +19,11 @@ function ZiFuList() {
             <div className='zifu-list-title-wrapper'>
                 <h3>Words to practice</h3>
                 <Link to='/learn'>
-                    <button className='practice'>Start practicing</button>
+                    <Button 
+                        className='practice' 
+                    >
+                        Start practicing
+                    </Button>
                 </Link>
             </div>
 

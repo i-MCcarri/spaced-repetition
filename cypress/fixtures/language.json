@@ -9,6 +9,8 @@
   "words": [
     {
       "id": 1,
+      "character": "character 1",
+      "pinyin": "pinyin 1",
       "original": "original 1",
       "translation": "translation 1",
       "memory_value": 0,
@@ -19,6 +21,8 @@
     },
     {
       "id": 2,
+      "character": "character 2",
+      "pinyin": "pinyin 2",
       "original": "original 2",
       "translation": "translation 2",
       "memory_value": 0,
@@ -29,6 +33,8 @@
     },
     {
       "id": 3,
+      "character": "character 3",
+      "pinyin": "pinyin 3",
       "original": "original 3",
       "translation": "translation 3",
       "memory_value": 0,
@@ -39,6 +45,8 @@
     },
     {
       "id": 4,
+      "character": "character 4",
+      "pinyin": "pinyin 4",
       "original": "original 4",
       "translation": "translation 4",
       "memory_value": 0,
@@ -49,6 +57,8 @@
     },
     {
       "id": 5,
+      "character": "character 5",
+      "pinyin": "pinyin 5",
       "original": "original 5",
       "translation": "translation 5",
       "memory_value": 0,

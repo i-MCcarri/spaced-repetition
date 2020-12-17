@@ -45,7 +45,7 @@ describe(`User story: Go to next word`, function() {
           cy.get('h2')
             .should('have.text', 'Translate the word:')
             .siblings('span')
-            .should('have.text', languageHeadFixture.nextWord)
+            .should('have.text', `${languageHeadFixture.nextCharacter} - ${languageHeadFixture.nextPinyin}`)
         })
       })
 

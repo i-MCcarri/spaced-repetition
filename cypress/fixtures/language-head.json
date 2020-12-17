@@ -1,4 +1,6 @@
 {
+  "nextCharacter": "Testnextcharacter",
+  "nextPinyin": "Testnextpinyin",
   "nextWord": "Testnextword",
   "wordCorrectCount": 222,
   "wordIncorrectCount": 333,

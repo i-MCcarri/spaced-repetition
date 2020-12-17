@@ -1,22 +1,23 @@
 import React, { Fragment } from 'react';
+import Button from '../Button/Button';
 
 function Result(props) {
     return (
         <div>
-            <div className='score'>
+            <div className='DisplayScore'>
                 <p>Your total score is: {props.totalScore}</p>
             </div>
             {props.isCorrect
-                ? <h2>You were correct!</h2>
-                : <h2>Almost! Try again</h2>
+                ? <h2>You were correct! :D</h2>
+                : <h2>Good try, but not quite right :(</h2>
             }
-            <div className='user-feedback'>
+            <div className='DisplayFeedback'>
                 <p>The correct translation for {props.original} was {props.translation} and you chose {props.input}!</p>
             </div>
 
-            <button onClick={() => {
+            <Button onClick={() => {
                 props.setAnswer(null)
-            }}>Try the next word!</button>
+            }}>Try another word!</Button>
         </div>
     )
 }

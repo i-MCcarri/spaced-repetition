@@ -1,5 +1,8 @@
 body {
     background-image: url('../images/44963217242_9eafb93c36_o.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     background-position-x: 10%;
     background-position-y: 20%;
     
