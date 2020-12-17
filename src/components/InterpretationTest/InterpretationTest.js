@@ -1,4 +1,4 @@
-import React, { useEffect, Fragment, useState, useContext } from 'react';
+import React, { useEffect, Fragment, useState } from 'react';
 import ChineseApiService from '../../services/zhongWen-api-service';
 import Result from '../Result/Result';
 import Button from '../Button/Button';

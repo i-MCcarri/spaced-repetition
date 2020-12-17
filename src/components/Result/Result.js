@@ -1,4 +1,3 @@
-import React, { Fragment } from 'react';
 import Button from '../Button/Button';
 
 function Result(props) {
