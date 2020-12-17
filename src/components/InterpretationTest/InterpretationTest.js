@@ -3,7 +3,6 @@ import ChineseApiService from '../../services/zhongWen-api-service';
 import Result from '../Result/Result';
 import Button from '../Button/Button';
 import '../../css/InterpretationTest.css';
-//import UserContext from '../../contexts/UserContext';
 
 function CeShi(props) {
 

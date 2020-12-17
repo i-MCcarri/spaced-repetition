@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Dashboard from '../../components/Dashboard/Dashboard';
-import '../../css/ZiFu.css';
 
 class DashboardRoute extends Component {
   static defaultProps = {
