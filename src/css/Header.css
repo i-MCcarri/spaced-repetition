@@ -4,7 +4,7 @@
     text-decoration: none;
     color: #9AC2C5;
     letter-spacing: 1px;
-    text-shadow: 0 2px 0 #000;
+    text-shadow: 1px 4px 1px #000;
     font-weight: 700;
     text-align: center;
 }
@@ -17,13 +17,13 @@
 .header-nav, .header-nav a {
     color: #FFFFFF;
     letter-spacing: 1px;
-    text-shadow: 0 2px 0 #000;
+    text-shadow: 2px 2px 2px #000;
     font-weight: 600;
     font-size: 18px;
     text-align: center;
     margin-top: -100px;
-    margin-left: 30px;
-    margin-right: 70px;
+    margin-left: 8vw;
+    margin-right: 18vw;
 }
 
 .header-nav a:hover {
@@ -38,7 +38,7 @@ a {
     text-decoration: none;
 }
 
-.user-name, footer {
+.user-name {
     color: #888888;
     letter-spacing: 1px;
     text-shadow: 0 2px 0 #000;
@@ -66,8 +66,27 @@ div {
     align-items: center;
 }
 
+p.intro, footer {
+    background-color: rgba(98, 89, 110, 0.7);
+    border: none;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: -5%;
+    padding: 9px 0;
+    text-align: center;
+}
+
 button {
     text-align: center;
     width: 100%;
     padding: 8px 5px;
+}
+
+footer {
+    color: #FFFFFF;
+    letter-spacing: 1px;
+    text-shadow: 0 2px 0 #000;
+    font-weight: 600;
+    font-size: 17px;
+    text-align: center;
 }

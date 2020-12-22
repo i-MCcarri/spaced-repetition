@@ -1,7 +1,7 @@
 # Spaced Repetition Capstone
 
 # Diglot 
-Practice learning a language with the spaced reptition revision technique.
+Practice learning a language with the spaced repetition revision technique.
 
 ## Diglot Client Summary
 
